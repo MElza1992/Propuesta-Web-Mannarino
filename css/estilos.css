@@ -165,10 +165,9 @@ nav ul li a:hover {
     width: 100%;
     background-image: url(../images/fondo-02.jpg);
     background-attachment: fixed;
-   background-position: center;
+    background-position: center;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    border: 2px solid red;
 }
 #noticias{
     height: 40vw;
