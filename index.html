@@ -1,31 +1,53 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link href="css/estilos-tablet.css" rel="stylesheet" type="text/css" media="screen and (max-width:992px)">
+    <link href="css/estilos-movil.css" rel="stylesheet" type="text/css" media="screen and (max-width:576px)">
+    <link rel="stylesheet" href="src/css/lightbox.css">
     <script src="https://kit.fontawesome.com/40e8280f1c.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="src/js/lightbox.js"></script>
+
 </head>
 
 <body>
     <header>
-        <h1>MANNARINO</h1>
-
+        <a href="#escucha">
+            <h1>MANNARINO</h1>
+        </a>
         <div id="redes">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter"></i>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            </ul>
             <div class="clear"></div>
         </div>
-        <nav>
+        <nav id="grande">
             <ul>
-                <li><a href="#">noticias</a></li>
-                <li><a href="#">conciertos</a></li>
-                <li><a href="#">discos</a></li>
-                <li><a href="#">bio</a></li>
-                <li><a href="#">galería</a></li>
+                <li><a href="#anclaje-noticias">noticias</a></li>
+                <li><a href="#anclaje-conciertos">conciertos</a></li>
+                <li><a href="#anclaje-discos">discos</a></li>
+                <li><a href="#anclaje-bio">bio</a></li>
+                <li><a href="#anclaje-galeria">galería</a></li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+        <nav id="peque">
+            <a href="#" id="abrir-menu"><img src="images/menu-mini.svg" alt=""></a>
+            <a href="#" id="cerrar-menu"><i class="fas fa-times"></i></a>
+            <ul>
+                <li><a href="#anclaje-noticias">noticias</a></li>
+                <li><a href="#anclaje-conciertos">conciertos</a></li>
+                <li><a href="#anclaje-discos">discos</a></li>
+                <li><a href="#anclaje-bio">bio</a></li>
+                <li><a href="#anclaje-galeria">galería</a></li>
             </ul>
             <div class="clear"></div>
         </nav>
@@ -33,12 +55,18 @@
     </header>
     <main>
         <section id="escucha">
-            <div class="centrado">
-                <div id="boton-escucha">
-                   <h1>Me so’mbriacato</h1>
-                    <a href="#">ESCÚCHALO AHORA</a>
+                <div id="caja-video">
+                    <video autoplay muted loop preload>
+                        <source src="video/video-mannarino.mp4" type="video/mp4">
+                        <source src="video/video-mannarino.webm" type="video/webm">
+                        <source src="" type="video/ogg">
+                    </video>
+                    <div id="boton-escucha">
+                        <h1>Me so’mbriacato</h1>
+                        <a href="#">ESCÚCHALO AHORA</a>
+                    </div>
+                     <img src="images/degradado.png" alt="" id="degradado">
                 </div>
-            </div>
         </section>
         <section id="escucha-texto">
             <div class="centrado">
@@ -47,9 +75,295 @@
             </div>
         </section>
         <div id="visual-uno"></div>
+        <div id="anclaje-noticias"></div>
         <section id="noticias">
-            
+            <div class="centrado">
+                <h2>NOTICIAS</h2>
+                <div class="bloque-noticia" id="noticia-1">
+                    <h4>16/04/2020</h4>
+                    <h3>DIGNIATIAE PLIBUS</h3>
+                    <p>To blam qui dest aut hiti occaborerum aut maximod quidusd andandisto voluptas volorpos quis volestrum dit et expelle voluptatis as cumquunto volorit re doluptat aut vidus, audandi tendae invellum evel ipic tectur?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta dolorum perferendis laudantium tenetur ipsum, ut, non optio nisi explicabo. Nostrum voluptas, est aspernatur dignissimos distinctio velit! Repudiandae sequi nesciunt, molestiae.</p>
+                </div>
+                <div class="bloque-noticia" id="noticia-2">
+                    <h4>16/04/2020</h4>
+                    <h3>DIGNIATIAE PLIBUS</h3>
+                    <p>To blam qui dest aut hiti occaborerum aut maximod quidusd andandisto voluptas volorpos quis volestrum dit et expelle voluptatis as cumquunto volorit re doluptat aut vidus, audandi tendae invellum evel ipic tectur?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta dolorum perferendis laudantium tenetur ipsum, ut, non optio nisi explicabo. Nostrum voluptas, est aspernatur dignissimos distinctio velit! Repudiandae sequi nesciunt, molestiae.</p>
+                </div>
+                <div class="bloque-noticia" id="noticia-3">
+                    <h4>16/04/2020</h4>
+                    <h3>DIGNIATIAE PLIBUS</h3>
+                    <p>To blam qui dest aut hiti occaborerum aut maximod quidusd andandisto voluptas volorpos quis volestrum dit et expelle voluptatis as cumquunto volorit re doluptat aut vidus, audandi tendae invellum evel ipic tectur?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta dolorum perferendis laudantium tenetur ipsum, ut, non optio nisi explicabo. Nostrum voluptas, est aspernatur dignissimos distinctio velit! Repudiandae sequi nesciunt, molestiae.</p>
+                </div>
+                <div class="clear"></div>
+                <div id="oculto-noticias">
+                    <div class="bloque-noticia" id="noticia-4">
+                        <h4>16/04/2020</h4>
+                        <h3>DIGNIATIAE PLIBUS</h3>
+                        <p>To blam qui dest aut hiti occaborerum aut maximod quidusd andandisto voluptas volorpos quis volestrum dit et expelle voluptatis as cumquunto volorit re doluptat aut vidus, audandi tendae invellum evel ipic tectur?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta dolorum perferendis laudantium tenetur ipsum, ut, non optio nisi explicabo. Nostrum voluptas, est aspernatur dignissimos distinctio velit! Repudiandae sequi nesciunt, molestiae.</p>
+                    </div>
+                    <div class="bloque-noticia" id="noticia-5">
+                        <h4>16/04/2020</h4>
+                        <h3>DIGNIATIAE PLIBUS</h3>
+                        <p>To blam qui dest aut hiti occaborerum aut maximod quidusd andandisto voluptas volorpos quis volestrum dit et expelle voluptatis as cumquunto volorit re doluptat aut vidus, audandi tendae invellum evel ipic tectur?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta dolorum perferendis laudantium tenetur ipsum, ut, non optio nisi explicabo. Nostrum voluptas, est aspernatur dignissimos distinctio velit! Repudiandae sequi nesciunt, molestiae.</p>
+                    </div>
+                    <div class="bloque-noticia  quitar" id="noticia-6">
+                        <h4>16/04/2020</h4>
+                        <h3>DIGNIATIAE PLIBUS</h3>
+                        <p>To blam qui dest aut hiti occaborerum aut maximod quidusd andandisto voluptas volorpos quis volestrum dit et expelle voluptatis as cumquunto volorit re doluptat aut vidus, audandi tendae invellum evel ipic tectur?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta dolorum perferendis laudantium tenetur ipsum, ut, non optio nisi explicabo. Nostrum voluptas, est aspernatur dignissimos distinctio velit! Repudiandae sequi nesciunt, molestiae.</p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <a href="#" class="abrir" id="abrir-noticias"><img src="images/arrow-blanca.svg" alt=""></a>
+                <a href="#" class="cerrar" id="cerrar-noticias"><i class="fas fa-times" id="equis-noticias"></i></a>
+            </div>
+        </section>
+        <div id="anclaje-conciertos"></div>
+        <section id="conciertos">
+            <div class="centrado">
+                <h2>CONCIERTOS</h2>
+                <div class="bloque-concierto">
+                    <div id="fecha">
+                        <p>11 JUL<br><span>2020</span></p>
+                    </div>
+                    <div id="lugar">
+                        <p><span>WiZink Center</span><br>Madrid, España</p>
+                    </div>
+                    <div id="entrada">
+                        <a href="#">COMPRAR</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="bloque-concierto">
+                    <div id="fecha">
+                        <p>11 JUL<br><span>2020</span></p>
+                    </div>
+                    <div id="lugar">
+                        <p><span>WiZink Center</span><br>Madrid, España</p>
+                    </div>
+                    <div id="entrada">
+                        <a href="#">COMPRAR</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="bloque-concierto">
+                    <div id="fecha">
+                        <p>11 JUL<br><span>2020</span></p>
+                    </div>
+                    <div id="lugar">
+                        <p><span>WiZink Center</span><br>Madrid, España</p>
+                    </div>
+                    <div id="entrada">
+                        <a href="#">COMPRAR</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="bloque-concierto">
+                    <div id="fecha">
+                        <p>11 JUL<br><span>2020</span></p>
+                    </div>
+                    <div id="lugar">
+                        <p><span>WiZink Center</span><br>Madrid, España</p>
+                    </div>
+                    <div id="entrada">
+                        <a href="#">COMPRAR</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div id="oculto-conciertos">
+                    <div class="bloque-concierto">
+                        <div id="fecha">
+                            <p>11 JUL<br><span>2020</span></p>
+                        </div>
+                        <div id="lugar">
+                            <p><span>WiZink Center</span><br>Madrid, España</p>
+                        </div>
+                        <div id="entrada">
+                            <a href="#">COMPRAR</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="bloque-concierto">
+                        <div id="fecha">
+                            <p>11 JUL<br><span>2020</span></p>
+                        </div>
+                        <div id="lugar">
+                            <p><span>WiZink Center</span><br>Madrid, España</p>
+                        </div>
+                        <div id="entrada">
+                            <a href="#">COMPRAR</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <a href="#" class="abrir" id="abrir-conciertos"><img src="images/arrow-roja.svg" alt=""></a>
+                <a href="#" class="cerrar" id="cerrar-conciertos"><i class="fas fa-times" id="equis-conciertos"></i></a>
+
+            </div>
+        </section>
+        <div id="visual-dos"></div>
+        <div id="anclaje-discos"></div>
+        <section id="discos">
+            <div class="centrado">
+                <h2>DISCOS</h2>
+                <div class="bloque-discos">
+                    <a href="#" id="btn-disco1"><img src="images/cd-01.jpg" alt=""></a>
+                    <h3>APRITI CIELO LIVE</h3>
+                    <h4>MANNARINO</h4>
+                </div>
+                <div class="popup" id="popup-disco1">
+                    <img src="images/cd-01.jpg" alt="">
+                    <div id="info-disco">
+                        <h3>APRITI CIELO LIVE</h3>
+                        <h4>2017, Universal Music Italia Srl</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto delectus, dicta facere beatae? Officia voluptas sint atque mollitia, qui dolor sequi, obcaecati aut unde quisquam tempora enim eligendi nemo commodi, recusandae adipisci. Nobis fuga at qui molestias aspernatur, quae ipsa?</p>
+                        <a href="#" class="spoty">Escúchalo en Spotify</a>
+                    </div>
+                    <div class="clear"></div>
+                    <a href="#" class="cerrar-popup"><i class="fas fa-times"></i></a>
+                </div>
+                <div class="bloque-discos">
+                    <a href="#" id="btn-disco2"><img src="images/cd-02.jpg" alt=""></a>
+                    <h3>APRITI CIELO</h3>
+                    <h4>MANNARINO</h4>
+                </div>
+                <div class="popup" id="popup-disco2">
+                    <img src="images/cd-02.jpg" alt="">
+                    <div id="info-disco">
+                        <h3>MADUR</h3>
+                        <h4>2017, Universal Music Italia Srl</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto delectus, dicta facere beatae? Officia voluptas sint atque mollitia, qui dolor sequi, obcaecati aut unde quisquam tempora enim eligendi nemo commodi, recusandae adipisci. Nobis fuga at qui molestias aspernatur, quae ipsa?</p>
+                        <a href="#" class="spoty">Escúchalo en Spotify</a>
+                    </div>
+                    <div class="clear"></div>
+                    <a href="#" class="cerrar-popup"><i class="fas fa-times"></i></a>
+                </div>
+                <div class="bloque-discos">
+                    <a href="#" id="btn-disco3"><img src="images/cd-03.jpg" alt=""></a>
+                    <h3>MADUR</h3>
+                    <h4>MANNARINO & BARBAROSSA</h4>
+                </div>
+                <div class="popup" id="popup-disco3">
+                    <img src="images/cd-03.jpg" alt="">
+                    <div id="info-disco">
+                        <h3>MADUR</h3>
+                        <h4>2017, Universal Music Italia Srl</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto delectus, dicta facere beatae? Officia voluptas sint atque mollitia, qui dolor sequi, obcaecati aut unde quisquam tempora enim eligendi nemo commodi, recusandae adipisci. Nobis fuga at qui molestias aspernatur, quae ipsa?</p>
+                        <a href="#" class="spoty">Escúchalo en Spotify</a>
+                    </div>
+                    <div class="clear"></div>
+                    <a href="#" class="cerrar-popup"><i class="fas fa-times"></i></a>
+                </div>
+                <div class="bloque-discos">
+                    <a href="#" id="btn-disco4"><img src="images/cd-04.jpg" alt=""></a>
+                    <h3>AL MONTE</h3>
+                    <h4>MANNARINO</h4>
+                </div>
+                <div class="popup" id="popup-disco4">
+                    <img src="images/cd-04.jpg" alt="">
+                    <div id="info-disco">
+                        <h3>AL MONTE</h3>
+                        <h4>2017, Universal Music Italia Srl</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto delectus, dicta facere beatae? Officia voluptas sint atque mollitia, qui dolor sequi, obcaecati aut unde quisquam tempora enim eligendi nemo commodi, recusandae adipisci. Nobis fuga at qui molestias aspernatur, quae ipsa?</p>
+                        <a href="#" class="spoty">Escúchalo en Spotify</a>
+                    </div>
+                    <div class="clear"></div>
+                    <a href="#" class="cerrar-popup"><i class="fas fa-times"></i></a>
+                </div>
+                <div id="oculto-discos">
+                    <div class="bloque-discos">
+                        <a href="#" id="btn-disco5"><img src="images/cd-05.jpg" alt=""></a>
+                        <h3>SUPERSANTOS</h3>
+                        <h4>MANNARINO</h4>
+                    </div>
+                    <div class="popup" id="popup-disco5">
+                        <img src="images/cd-05.jpg" alt="">
+                        <div id="info-disco">
+                            <h3>SUPERSANTOS</h3>
+                            <h4>2017, Universal Music Italia Srl</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto delectus, dicta facere beatae? Officia voluptas sint atque mollitia, qui dolor sequi, obcaecati aut unde quisquam tempora enim eligendi nemo commodi, recusandae adipisci. Nobis fuga at qui molestias aspernatur, quae ipsa?</p>
+                            <a href="#" class="spoty">Escúchalo en Spotify</a>
+                        </div>
+                        <div class="clear"></div>
+                        <a href="#" class="cerrar-popup"><i class="fas fa-times"></i></a>
+                    </div>
+                    <div class="bloque-discos">
+                        <a href="#" id="btn-disco6"><img src="images/cd-06.jpg" alt=""></a>
+                        <h3>BAR DELLA RABBIA</h3>
+                        <h4>MANNARINO</h4>
+                    </div>
+                    <div class="popup" id="popup-disco6">
+                        <img src="images/cd-06.jpg" alt="">
+                        <div id="info-disco">
+                            <h3>BAR DELLA RABBIA</h3>
+                            <h4>2017, Universal Music Italia Srl</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto delectus, dicta facere beatae? Officia voluptas sint atque mollitia, qui dolor sequi, obcaecati aut unde quisquam tempora enim eligendi nemo commodi, recusandae adipisci. Nobis fuga at qui molestias aspernatur, quae ipsa?</p>
+                            <a href="#" class="spoty">Escúchalo en Spotify</a>
+                        </div>
+                        <div class="clear"></div>
+                        <a href="#" class="cerrar-popup"><i class="fas fa-times"></i></a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="flecha">
+                    <a href="#" class="abrir" id="abrir-discos"><img src="images/arrow-verde.svg" alt=""></a>
+                    <a href="#" class="cerrar" id="cerrar-discos"><i class="fas fa-times" id="equis-discos"></i></a>
+                </div>
+            </div>
+            <div class="fondo"></div>
+        </section>
+        <div id="anclaje-bio"></div>
+        <section id="bio">
+            <div id="texto-bio">
+                <p><span>Selonio</span> ipsum dolor sit amet, consectetur adipisicing elit. Ea, aspernatur blanditiis impedit sint incidunt iure aut! Sapiente laboriosam vero, sint nostrum eos ullam ad similique officia repellat nihil eligendi expedita earum hic nulla cumque beatae consequuntur neque quam debitis iure dolor inventore, voluptas voluptate! Quaerat itaque fugit sapiente, aperiam, vitae est doloremque omnis mollitia quas fuga reiciendis cum minima.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora libero commodi tempore nesciunt, dicta ratione? Modi repudiandae provident fugiat commodi delectus doloribus. Ullam, tempore maiores labore error iste, aut quisquam, iure deserunt vero blanditiis repudiandae.Sapiente laboriosam vero, sint nostrum eos ullam ad similique officia repellat nihil eligendi expedita earum hic nulla cumque beatae consequuntur neque quam debitis iure dolor inventore, voluptas voluptate! Quaerat itaque fugit sapiente, aperiam, vitae est doloremque omnis mollitia quas fuga reiciendis cum minima.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora libero commodi tempore nesciunt, dicta ratione? Modi repudiandae provident fugiat commodi delectus doloribus. Ullam, tempore maiores labore error iste, aut quisquam, iure deserunt vero blanditiis repudiandae.</p>
+            </div>
+            <div class="clear"></div>
+            <img src="images/mannarino.png" alt="">
+        </section>
+        <div id="anclaje-galeria"></div>
+        <section id="galeria">
+            <div class="centrado">
+                <h2>GALERIA</h2>
+                <div id="bloque-galeria">
+                    <a href="images/galeria-01.jpg" data-lightbox="galeria"><img src="images/galeria-01.jpg" alt=""></a>
+                    <a href="images/galeria-02.jpg" data-lightbox="galeria"><img src="images/galeria-02.jpg" alt=""></a>
+                    <a href="images/galeria-03.jpg" data-lightbox="galeria"><img src="images/galeria-03.jpg" alt=""></a>
+                    <a href="images/galeria-04.jpg" data-lightbox="galeria"><img src="images/galeria-04.jpg" alt=""></a>
+                    <a href="images/galeria-05.jpg" data-lightbox="galeria"><img src="images/galeria-05.jpg" alt=""></a>
+                    <a href="images/galeria-06.jpg" data-lightbox="galeria"><img src="images/galeria-06.jpg" alt=""></a>
+                    <a href="images/galeria-07.jpg" data-lightbox="galeria"><img src="images/galeria-07.jpg" alt=""></a>
+                    <a href="images/galeria-08.jpg" data-lightbox="galeria"><img src="images/galeria-08.jpg" alt=""></a>
+                    <a href="images/galeria-09.jpg" data-lightbox="galeria" class="quitar hibrido"><img src="images/galeria-09.jpg" alt=""></a>
+                    <a href="images/galeria-10.jpg" data-lightbox="galeria" class="oculto-galeria"><img src="images/galeria-10.jpg" alt=""></a>
+                    <a href="images/galeria-11.jpg" data-lightbox="galeria" class="oculto-galeria"><img src="images/galeria-11.jpg" alt=""></a>
+                    <a href="images/galeria-12.jpg" data-lightbox="galeria" class="oculto-galeria"><img src="images/galeria-12.jpg" alt=""></a>
+                    <div class="clear"></div>
+
+                </div>
+                <a href="#" class="abrir" id="abrir-galeria"><img src="images/arrow-blanca.svg" alt=""></a>
+                <a href="#" class="cerrar" id="cerrar-galeria"><i class="fas fa-times" id="equis-galeria"></i></a>
+            </div>
         </section>
     </main>
-    
+    <footer>
+        <div class="centrado">
+            <h1>MANNARINO</h1>
+            <div id="redes-footer">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div id="legal">© Mannarino 2020 | <a href="#">Aviso Legal</a> | <a href="#">Política de Privacidad</a> | <a href="#">Cookies</a></div>
+            <div id="contacto"><a href="#">Contacto y prensa</a></div>
+            <div class="clear"></div>
+        </div>
+    </footer>
+    <script src="js/menu-movil.js"></script>
+    <script src="js/boton-desplegable.js"></script>
+    <script src="js/pop-up.js"></script>
+    <script src="js/anclaje.js"></script>
 </body></html>

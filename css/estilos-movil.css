@@ -1,0 +1,239 @@
+@media screen and (max-width:576px) {
+
+
+    body {
+        font-size: 10px;
+        min-width: 400px;
+    }
+
+    .centrado {
+        width: 100%;
+        margin: auto;
+
+    }
+
+    nav {
+        float: right;
+
+    }
+
+    #redes {
+        width: 150px;
+        float: left;
+        margin-left: 11%;
+    }
+
+    #redes ul li a {
+        line-height: 32px;
+
+    }
+
+    #grande {
+        display: none;
+    }
+
+    #peque {
+        display: block;
+        height: 2px;
+        overflow: hidden;
+        background-color: #fff2e0;
+        transition: all 0.5s ease;
+    }
+
+    #abrir-menu {
+        width: 16%;
+        display: block;
+        margin-left: 45%;
+    }
+
+    #cerrar-menu {
+        display: none;
+        text-align: center
+    }
+
+    #cerrar-menu i {
+        font-size: 25px;
+        color: #000;
+        padding-left: 5%;
+    }
+
+    nav {
+        width: 30%;
+    }
+
+    nav ul li a {
+        width: 100%;
+        height: 20px;
+        float: left;
+        line-height: 20px;
+        text-decoration: none;
+        color: #000;
+        text-align: center;
+        padding-left: 3%;
+        padding-right: 3%;
+        border-left: 0px solid #000;
+    }
+
+    nav ul li a img {
+        width: auto;
+        height: 100%;
+        margin: auto;
+        padding-right: 10px;
+    }
+    #boton-escucha {
+    padding-top: 60%;
+    padding-bottom: 0%;
+}
+    #escucha-texto {
+        width: 100%;
+        min-height: 48.3vw;
+        background-image: url(../images/fondo-01-2.jpg);
+        background-color: rgb(112, 158, 125);
+        background-attachment: scroll;
+        background-position: center bottom;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+
+    #escucha-texto p {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+ #visual-uno {
+    height: 76vw;
+    width: 100%;
+    background-image: url(../images/fondo-02-peque.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    .bloque-noticia {
+        width: 78%;
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-bottom: 10%;
+    }
+
+    #noticia-3 {
+        display: none;
+    }
+
+    .bloque-concierto {
+        margin-left: 8%;
+        margin-right: 8%;
+        padding-top: 30px;
+        padding-bottom: 35px;
+    }
+
+    #fecha {
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+        border-right: 0px;
+        color: rgb(174, 75, 60);
+    }
+
+    #fecha p {
+        font-size: 2em;
+        margin: 0px;
+    }
+
+    #fecha span {
+        font-size: 1.3em;
+    }
+
+    #lugar {
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+        padding-left: 0%;
+        text-align: center;
+    }
+
+    #entrada {
+        margin-left: 0%;
+        margin-right: 0%;
+        padding-top: 0px;
+        width: 100%;
+    }
+
+    #entrada a {
+        width: 40%;
+        display: block;
+        margin: auto;
+    }
+
+    .bloque-discos {
+        width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-bottom: 10%;
+    }
+
+    #bio {
+        background-image: url(../images/bio-movil.jpg);
+
+    }
+
+    #texto-bio {
+        width: 90%;
+        float: none;
+        padding-bottom: 20vw;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    #texto-bio p {
+        padding-left: 0%;
+        padding-top: 2%;
+
+    }
+
+    #galeria #bloque-galeria a {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        float: none;
+
+    }
+
+    footer h1 {
+        font-size: 5em;
+
+    }
+
+    footer #redes-footer {
+        width: 80%;
+        padding-left:7%;
+        padding-right: 0%;
+    }
+
+    footer #redes-footer ul li a {
+        line-height: 19.2vw;
+        font-size: 1.2em;
+        margin-left: 4%;
+        margin-right: 4%;
+        width: 20%;
+        height: 15vw;
+        padding: 0%;
+
+    }
+
+    footer #redes-footer i {
+        height: 100%;
+        line-height: 15vw;
+        font-size:50px;
+    }
+
+    #legal {
+        padding-left: 5%;
+        font-size: 1em;
+    }
+
+    #contacto {
+        padding-right: 5%;
+        font-size: 1em;
+    }
+}

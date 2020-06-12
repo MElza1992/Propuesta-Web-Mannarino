@@ -1,0 +1,45 @@
+@media screen and (max-width:992px) {
+    body {
+        font-size: 12px;
+    }
+
+    .centrado {
+        width: 90%;
+        margin: auto;
+       
+    }
+
+    .quitar {
+        display: none !important;
+    }
+
+    .flecha {
+        display: block;
+    }
+    #boton-escucha {
+    padding-top: 40%;
+    padding-bottom: 0%;
+}
+    .bloque-noticia {
+        margin-bottom: 3%;
+        width: 40%;
+    }
+
+    #noticia-3 {
+        display: none;
+    }
+
+    .bloque-discos {
+        width: 46%;
+    }
+
+    #oculto-discos {
+        overflow: hidden;
+        height:0px;
+    }
+
+    #galeria #bloque-galeria a{
+        width: 48%;
+    }
+
+}

@@ -1,17 +1,72 @@
 body {
     margin: 0px;
-    min-width: 576px;
+    font-size: 15px;
+}
 
+img {
+    width: 100%;
+    display: block;
 }
 
 .centrado {
     width: 80%;
     margin: auto;
-
+    max-width: 960px;
 }
 
 .clear {
     clear: both;
+}
+
+.flecha {
+    display: none;
+}
+
+.abrir {
+    margin-top: 70px;
+    padding-bottom: 70px;
+    margin-left: 47%;
+    margin-right: 47%;
+    display: block;
+}
+
+.abrir img {
+    width: 100%;
+    margin: auto;
+
+}
+
+.cerrar {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 70px;
+    padding-bottom: 70px;
+    display: none;
+}
+
+.cerrar #equis-noticias {
+    color: #fff2e0;
+}
+
+.cerrar #equis-conciertos {
+    color: rgb(174, 75, 60);
+}
+
+.cerrar #equis-discos {
+    color: rgb(112, 158, 125);
+}
+
+.cerrar #equis-galeria {
+    color: #fff2e0;
+}
+
+h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3.2em;
+    text-align: center;
+    margin: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 header {
@@ -22,6 +77,8 @@ header {
     background-color: #fff2e0;
     position: fixed;
     top: 0px;
+    box-shadow: 2px 2px 10px 2px rgba(118, 116, 116, 0.41);
+    z-index: 1;
 }
 
 header h1 {
@@ -38,7 +95,6 @@ nav {
     padding-top: 15px;
     padding-bottom: 15px;
     width: 40%;
-
 }
 
 nav ul {
@@ -62,46 +118,65 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: rgb(174, 75, 60)
+    color: rgb(174, 75, 60);
+}
+
+#peque {
+    display: none;
 }
 
 #redes {
+    width: 150px;
+    display: block;
     float: right;
-    margin-right: 20px;
-    margin-top: 5px;
+    margin: 0px;
 }
 
-#redes i {
+#redes ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+#redes ul li a {
+    display: block;
+    float: left;
+    line-height: 26px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.7em;
+    color: inherit;
+    margin-left: 5px;
+    margin-right: 5px;
     width: 25px;
     height: 25px;
     padding: 3px;
-    margin-left: 5px;
-    float: left;
     border: 1px solid #000;
     border-radius: 50%;
-    font-size: 1.5em;
+}
+
+#redes i {
+    font-size: 23px;
     text-align: center;
 }
 
-#redes i:hover {
+#redes a:hover {
+    color: rgb(174, 75, 60);
     border: 1px solid rgb(174, 75, 60);
-    color: rgb(174, 75, 60)
 }
 
-#escucha {
-    background-image: url(../images/fondo-01.jpg);
-    background-attachment: scroll;
-    background-position: center top;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 56vw;
-    margin-top: 70px;
+#escucha video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -4;
 }
-#escucha .centrado{
-    height: 100%;
-    position: relative;
-}
+
 #escucha h1 {
     width: 100%;
     margin: 0px;
@@ -110,13 +185,15 @@ nav ul li a:hover {
     color: #fff2e0;
     text-align: center;
     font-size: 4.7em;
-    
 }
-#boton-escucha{
+
+#boton-escucha {
     width: 100%;
-    position: absolute;
-    bottom:20%
+    margin: auto;
+    padding-top: 25%;
+    padding-bottom: 0%;
 }
+
 #escucha a {
     height: 45px;
     display: block;
@@ -132,20 +209,28 @@ nav ul li a:hover {
     background-color: rgba(255, 242, 224, 0.28);
     border-radius: 15px;
     border: 3px solid #fff2e0;
-    margin: auto;  
+    margin: auto;
 }
 
 #escucha a:hover {
     background-color: rgba(255, 242, 224, 0.50);
 }
-#escucha-texto .centrado{
+
+#degradado {
+    width: 100%;
+    display: block;
+
+}
+
+#escucha-texto .centrado {
     padding-top: 10%;
 }
+
 #escucha-texto {
     width: 100%;
     min-height: 48.3vw;
     background-image: url(../images/fondo-01-2.jpg);
-    background-color: rgb(112,158,125);
+    background-color: rgb(112, 158, 125);
     background-attachment: scroll;
     background-position: center bottom;
     background-size: 100% auto;
@@ -160,18 +245,525 @@ nav ul li a:hover {
     margin-bottom: 0px;
     padding-bottom: 5%;
 }
-#visual-uno{
+
+#visual-uno {
     height: 40vw;
     width: 100%;
     background-image: url(../images/fondo-02.jpg);
     background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#anclaje-noticias {
+    position: relative;
+    top: -82px;
+}
+
+#noticias {
+    width: 100%;
+    background-image: url(../images/fondo-03.png);
+    background-color: rgb(188, 153, 153);
+    background-attachment: scroll;
+    background-position: center bottom;
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
-#noticias{
-    height: 40vw;
+
+#noticias h2 {
+    color: #fff2e0;
+}
+
+.bloque-noticia {
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 3%;
+    width: 23%;
+    float: left;
+}
+
+#oculto-noticias {
+    overflow: hidden;
+    padding-top: 5%;
+    height: 0px;
+}
+
+.bloque-noticia h4 {
+    color: #fff2e0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0px;
+    padding-top: 20px;
+}
+
+.bloque-noticia h3 {
+    color: #fff2e0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    margin: 0px;
+    padding-top: 10px;
+}
+
+.bloque-noticia p {
+    color: #fff2e0;
+    font-size: 1.2em;
+}
+
+#noticia-1 {
+    background-image: url(../images/noticias-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#noticia-2 {
+    background-image: url(../images/noticias-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#noticia-3 {
+    background-image: url(../images/noticias-03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#noticia-4 {
+    background-image: url(../images/noticias-04.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#noticia-5 {
+    background-image: url(../images/noticias-05.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#noticia-6 {
+    background-image: url(../images/noticias-06.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#anclaje-conciertos {
+    position: relative;
+    top: -82px;
+}
+
+#conciertos {
     width: 100%;
-  background-image: url(../images/fondo-03.jpg);
-      
+    background-color: #fff2e0;
+    background-attachment: scroll;
+    background-position: center bottom;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+#conciertos h2 {
+    color: rgb(174, 75, 60);
+}
+
+.bloque-concierto {
+    border-top: 1px solid #000;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#oculto-conciertos {
+    overflow: hidden;
+    height: 0px;
+}
+
+#fecha {
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 20%;
+    border-right: 3px solid rgb(174, 75, 60);
+    float: left;
+    color: rgb(174, 75, 60);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.4em;
+    font-weight: 700;
+    text-align: center;
+}
+
+#fecha span {
+    font-size: 1.3em;
+}
+
+#lugar {
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 45%;
+    padding-left: 2%;
+    float: left;
+    color: #000;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+#lugar span {
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+#entrada {
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-top: 2%;
+    width: 25%;
+    float: left;
+    color: #000;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+#entrada a {
+    text-decoration: none;
+    color: #fff2e0;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.4em;
+    background-color: rgb(174, 75, 60);
+    display: block;
+    height: 60px;
+}
+
+#entrada a:hover {
+    background-color: rgba(174, 75, 60, 0.75)
+}
+
+#visual-dos {
+    height: 75vw;
+    width: 100%;
+    background-image: url(../images/fondo-04.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#anclaje-discos {
+    position: relative;
+    top: -82px;
+}
+
+#discos {
+    min-height: 57vw;
+    width: 100%;
+    background-image: url(../images/fondo-05.png);
+    background-color: #fff2e0;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+}
+
+.bloque-discos {
+    width: 29%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 3%;
+    float: left;
+}
+
+.bloque-discos img {
+    box-shadow: 2px 2px 7px 2px rgba(23, 22, 22, 0.67);
+    margin-bottom: 7px;
+}
+
+.bloque-discos h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.7em;
+    text-align: center;
+    color: rgb(112, 158, 125);
+    margin: 0px;
+
+}
+
+.bloque-discos h4 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    color: #000;
+    font-weight: 300;
+    margin: 0px;
+}
+
+#discos h2 {
+    color: rgb(112, 158, 125);
+}
+
+.fondo {
+    position: fixed;
+    background-color: rgba(188, 153, 153, 0.53);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: none;
+    opacity: 0;
+}
+
+.popup {
+    position: fixed;
+    left: 20%;
+    right: 20%;
+    top: 10%;
+    max-height: 65%;
+    z-index: 100;
+    background-color: rgba(255, 242, 224, 1);
+    box-shadow: 2px 2px 7px 2px rgba(23, 22, 22, 0.3);
+    padding: 5%;
+    z-index: 3;
+    display: none;
+    opacity: 0;
+    animation-name: popup;
+    animation-duration: 0.7s;
+}
+
+@keyframes popup {
+    from {
+        top: 50%;
+    }
+
+    to {
+        top: 10%;
+    }
+}
+
+.popup img {
+    width: 40%;
+    float: left;
+    margin-right: 0%;
+    box-shadow: 2px 2px 7px 2px rgba(23, 22, 22, 0.67);
+
+}
+
+.popup #info-disco {
+    float: left;
+    width: 60%;
+}
+
+.popup h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.7em;
+    text-align: center;
+    color: rgb(112, 158, 125);
+}
+
+.popup h4 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    color: #000;
+    font-weight: 300;
+}
+
+.popup p {
+    padding-left: 10%;
+    margin-bottom: 50px;
+
+}
+
+.popup .spoty {
+    display: block;
+    width: inherit;
+    height: 50px;
+    margin: auto;
+    background-color: rgb(112, 158, 125);
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1em;
+    color: #fff2e0;
+}
+
+.popup .cerrar-popup {
+    color: rgb(112, 158, 125);
+    font-size: 25px;
+    position: absolute;
+    right: 7px;
+    top: 3px;
+}
+
+#anclaje-bio {
+    position: relative;
+    top: -82px;
+}
+
+#bio {
+    background-image: url(../images/bio.jpg);
+    background-color: rgb(112, 158, 125);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    min-height: 60vw;
+    width: 100%;
+    position: relative;
+}
+
+#texto-bio {
+    width: 33%;
+    float: right;
+    padding-top: 5%;
+    padding-bottom: 13vw;
+    padding-right: 3%;
+    padding-left: 3%;
+    background-color: rgb(112, 158, 125);
+}
+
+#texto-bio p {
+    height: 100%;
+    margin: 0px;
+    color: #fff2e0;
+    padding-left: 2%;
+    padding-top: 5%;
+    font-size: 1.2em;
+    text-align: center;
+
+}
+
+#texto-bio p span {
+    font-family: 'Marthinoul';
+    src: url('../tipos/Marthinoul.woff2');
+    font-size: 3.2em;
+    color: rgb(174, 75, 60);
+    line-height: 0px;
+}
+
+#bio img {
+    position: absolute;
+    bottom: 0px;
+}
+
+#anclaje-galeria {
+    position: relative;
+    top: -82px;
+}
+
+#galeria {
+    width: 100%;
+    background-image: url(../images/fondo-06.png);
+    background-color: rgb(188, 153, 153);
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+#galeria h2 {
+    color: #fff2e0;
+}
+
+#galeria #bloque-galeria a {
+    display: block;
+    width: 31%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 2%;
+    float: left;
+    filter: grayscale(70%);
+}
+
+#galeria #bloque-galeria a:hover {
+    filter: grayscale(0%);
+}
+
+.oculto-galeria {
+    overflow: hidden;
+    height: 0px;
+    transition: all 0.8s ease;
+}
+
+footer {
+    background-color: #fff2e0;
+}
+
+footer h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 5.5em;
+    text-align: center;
+    color: rgb(174, 75, 60);
+    margin: 0px;
+    padding-top: 5%;
+}
+
+footer #redes-footer {
+    width: 246px;
+    display: block;
+    margin: auto;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-image: url(../images/3213760_19.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer #redes-footer ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+footer #redes-footer ul li a {
+    display: block;
+    float: left;
+    line-height: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.7em;
+    color: inherit;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+footer #redes-footer i {
+    font-size: 40px;
+    text-align: center;
+}
+
+footer #redes-footer a:hover {
+    color: rgb(174, 75, 60);
+    border: 1px solid rgb(174, 75, 60);
+}
+
+#legal {
+    float: left;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    font-size: 1.2em;
+}
+
+#legal a {
+    text-decoration: none;
+    color: rgb(174, 75, 60);
+}
+
+#contacto {
+    float: right;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    font-size: 1.2em;
+}
+
+#contacto a {
+    text-decoration: none;
+    color: #000;
 }
